@@ -60,29 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   onPressed: () {
                                     setState(() {
                                       if ((title.text ).isEmpty ){
-                                     // Navigator.pop(context);
-                                      showAlertDialog(BuildContext context) {
-
-  Widget okButton = TextButton(
-    child: Text("OK"),
-    onPressed: () { },
-  );
-
-  AlertDialog alert = AlertDialog(
-    title: Text("My title"),
-    content: Text("This is my message."),
-    actions: [
-      okButton,
-    ],
-  );
-
-  showDialog(
-    context: context,
-    builder: (BuildContext context) {
-      return alert;
-    },
-  );
-}
+                                     Navigator.pop(context);
                                      }else{
                                       tasks.add(TaskModel(title: title.text,subTitle:subTitle.text));
                                       Navigator.pop(context);
